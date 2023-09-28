@@ -1,8 +1,152 @@
-  .attribution {
-      font-size: 11px;
-      text-align: center;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-  .attribution a {
-      color: hsl(228, 45%, 44%);
-  }
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+
+
+.card {
+    background-color: white;
+}
+
+h1 {
+    font-size: 2.7rem;
+
+}
+
+.text {
+    padding: 1em;
+    color: hsl(235, 18%, 26%);
+    margin-bottom: 2rem;
+
+
+}
+
+.sign-up text {
+    margin-left: 2em;
+}
+
+.mobile-image img {
+    content: url(./assets/images/illustration-sign-up-mobile.svg);
+    width: 100%;
+}
+
+i img {
+    padding: 0rem 1em 0 0;
+
+}
+
+label {
+    display: block;
+    padding: 0.5em 0;
+}
+
+input[type="email"] {
+    padding: 1em;
+    width: 330px;
+    border-radius: 6px;
+    border: 1px solid hsla(235, 18%, 26%, 0.411);
+    margin-bottom: 1rem;
+
+
+}
+
+input[type="email"]::placeholder {
+    color: hsla(235, 18%, 26%, 0.583);
+}
+
+label {
+    color: black;
+    font-size: 0.7rem;
+    font-weight: 800;
+}
+
+button {
+    padding: 1em;
+    width: 360px;
+    background-color: hsl(234, 29%, 20%);
+    color: white;
+    border-radius: 6px;
+}
+
+.success .card {
+    width: 330px;
+    padding: 2em;
+
+}
+
+.card button {
+    width: 330px;
+    font-size: 16px;
+}
+
+
+
+.card {
+    height: 100vmax;
+}
+
+.image img {
+    display: none;
+}
+
+
+
+@media only screen and (min-width: 600px) {
+    .mobile-img img {
+        display: none;
+    }
+
+    .sign-up .card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .mobile-image {
+        display: none;
+    }
+
+    .image img {
+        content: url(./assets/images/illustration-sign-up-desktop.svg);
+        max-width: 300px;
+        display: block;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 50% 0;
+    }
+
+    .card {
+        height: auto;
+        border-radius: 25px;
+        padding: 1em;
+        max-width: 700px;
+
+    }
+
+    body {
+        background-color: hsl(234, 29%, 20%);
+    }
+}
