@@ -15,9 +15,8 @@
     <title>
       Frontend Mentor | Newsletter sign-up form with success message
     </title>
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <link rel="stylesheet" href="style.css" />
     <script src="script.js"></script>
   </head>
   <body>
@@ -31,30 +30,40 @@
             <h1>Stay updated!</h1>
             <p>Join 60,000+ product managers receiving monthly updates on:</p>
             <p>
-              <i><img src="./assets/images/icon-list.svg" alt="" /></i>Product
-              discovery and building what matters
+              <i><img src="./assets/images/icon-list.svg" alt="List Icon" /></i
+              >Product discovery and building what matters
             </p>
 
             <p>
-              <i><img src="./assets/images/icon-list.svg" alt="" /></i>Measuring
-              to ensure updates are a success
+              <i><img src="./assets/images/icon-list.svg" alt="List Icon" /></i
+              >Measuring to ensure updates are a success
             </p>
 
             <p>
-              <i><img src="./assets/images/icon-list.svg" alt="" /></i>And much
-              more!
+              <i><img src="./assets/images/icon-list.svg" alt="List Icon" /></i
+              >And much more!
             </p>
             <div class="submit">
               <div class="input">
+                <div class="line-up">
                 <label for="email">Email address</label>
+                <span id="email_error_message" role="alert"></span>
+                </div>
                 <input
                   type="email"
                   placeholder="email@company.com"
                   name="email"
                   id="email"
                 />
+                <div id="email_error_message" role="alert"></div>
               </div>
-              <button>Subscribe to monthly newsletter</button>
+              <button
+                type="submit"
+                name="email"
+                aria-label="Subscribe to monthly newsletter"
+              >
+                Subscribe to monthly newsletter
+              </button>
             </div>
           </div>
 
@@ -72,7 +81,9 @@
             <h1>Thanks for subscribing!</h1>
             <p></p>
           </div>
-          <button>Dismiss Message</button>
+          <button type="button" aria-label="Dismiss success message">
+            Dismiss Message
+          </button>
         </div>
       </div>
     </div>
@@ -84,12 +95,6 @@
     your subscription. -->
 
     <!-- Success message end -->
-
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+    <link rel="stylesheet" href="style.css" />
   </body>
 </html>

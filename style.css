@@ -54,8 +54,9 @@ i img {
 }
 
 label {
-    display: block;
     padding: 0.5em 0;
+    color: black;
+    font-weight: 800;
 }
 
 input[type="email"] {
@@ -72,11 +73,10 @@ input[type="email"]::placeholder {
     color: hsla(235, 18%, 26%, 0.583);
 }
 
-label {
-    color: black;
-    font-size: 0.7rem;
-    font-weight: 800;
+input[type="email"]:focus {
+    border: 1px solid hsla(235, 18%, 26%, 0.411);
 }
+
 
 button {
     padding: 1em;
@@ -86,17 +86,31 @@ button {
     border-radius: 6px;
 }
 
+.success button {
+    width: 330px;
+}
+
+.success .text {
+    padding: 0em;
+}
+
 .success .card {
     width: 330px;
     padding: 2em;
 
 }
 
-.card button {
-    width: 330px;
-    font-size: 16px;
+.line-up {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.7rem;
+
+
 }
 
+.line-up span {
+    color: hsl(4, 100%, 67%);
+}
 
 
 .card {
@@ -149,4 +163,6 @@ button {
     body {
         background-color: hsl(234, 29%, 20%);
     }
+
+
 }
